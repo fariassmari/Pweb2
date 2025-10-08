@@ -10,7 +10,11 @@
     <button type="button" onclick="soma(10, 24)">Clique aqui!</button>
     <h3 id="meuElemento">Altere o elemento</h3>
 
+    <input placeholder="nome" type="text" id="nome"/>
+
+    <button type="button" onclick="document.querySelector('meuElemento').innerHTML = document.getElementById('nome').value">Alterar Elemento</button>
     <script>
+        document.querySelector('input'.value);
         document.getElementById("meuElemento").innerHTML = "Alterei o elemento com JS";
         document.querySelector("h1").style.color = "red";
         /// window.open("https://www.google.com");
