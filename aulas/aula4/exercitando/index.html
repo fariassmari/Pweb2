@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="js/index.js"></script>
+</head>
+<body>
+  <h1 onclick="hello('Event')">Running Javascript</h1>
+  <button type="button" onclick="location()">Click me</button>
+  <script>
+    hello('Body Script');
+
+    // Exibe mensagens no console do navegador
+    window.console.log('Running JS in browser');
+
+    // Exibe largura da pagina
+    const width = window.innerWidth;
+    console.log(`Width: ${width}px`);
+
+    // Exibe altura da pagina
+    const height = window.innerHeight;
+    console.log(`Height: ${height}px`);
+
+    // Exibe alertas na tela do usuário
+    window.alert('Hello World!');
+
+    // Exibe uma caixa de confirmação na tela do usuário
+    const response = window.confirm('Are you sure?');
+    window.confirm(response);
+
+    // Exibe uma caixa de prompt na tela do usuário
+    const name = window.prompt('what is your name?');
+    console.log(name);
+
+    // Abre uma nova janela
+    //const windowRef = window.open("https://www.google.com");
+
+    // Fecha a janela atual
+    //window.close();
+
+    // Manipula a url para redirecionar o usuário
+    console.log(location.href);
+    location.href = "https://www.google.com";
+
+    // Acessar o historico de navegação do usuario
+    history.back();
+    history.forward();
+
+    // Manipula elementos da página
+    document.title = "New Title";
+    document.body.style.backgrounColor = "#f00";
+    // Dentro de document, temos:
+    // Anchors - links
+    console.log(document.anchors);
+    // Embeds - objetos embed
+    console.log(document.embeds);
+    // Forms - formulários
+    console.log(document.forms);
+    // Images - imagens
+    console.log(document.images);
+    // Links - links
+    console.log(document.links);
+
+    // Navegação
+    console.log(navigator.userAgent);
+    console.log(navigator.language);
+  </script>
+</body>
+</html>
+ 
