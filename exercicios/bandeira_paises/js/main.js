@@ -1,13 +1,13 @@
 import flags from './model/flags.js';
 
 const main = document.querySelector('main');
-let htmlContent = '';
+let htmlConteudo = '';
 
 for (const flag of flags) {
-  htmlContent += criarFlag(flag);
+  htmlConteudo += criarFlag(flag);
 }
 
-main.innerHTML = htmlContent;
+main.innerHTML = htmlConteudo;
 
 function criarFlag(flag) {
   return `
