@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Calculadora Moderna</title>
+</head>
+<body class="bg-gradient-to-b from-gray-900 to-gray-800 flex items-center justify-center min-h-screen text-white">
+
+    <main class="bg-gray-900 rounded-3xl shadow-2xl w-full max-w-sm p-4 border border-gray-700">
+    
+    <!-- VISOR -->
+    <div id ="display" class="bg-gray-800 rounded-xl p-4 mb-4 shadow-inner h-28 overflow-hidden">
+        <div id="display-top" class="text-right text-gray-400 text-lg h-6 mb-1">0</div>
+        <div id="display-bottom" class="text-right text-white text-5xl font-light h-16">0</div>
+    </div>
+
+    <!-- BOTÕES -->
+    <div class="grid grid-cols-4 gap-2">
+        <!-- Linha 1 -->
+        <button id="btn-func" class="bg-gray-400/30 text-white py-4 rounded-lg font-semibold hover:bg-gray-400/50 transition">AC</button>
+        <button id="btn-func" class="bg-gray-400/30 text-white py-4 rounded-lg font-semibold hover:bg-gray-400/50 transition">+/-</button>
+        <button id="btn-func" class="bg-gray-400/30 text-white py-4 rounded-lg font-semibold hover:bg-gray-400/50 transition">%</button>
+        <button id="btn-op" class="bg-orange-500 text-white py-4 rounded-lg font-bold hover:bg-orange-400 transition">÷</button>
+
+        <!-- Linha 2 -->
+        <button id="btn" class="bg-gray-700 py-4 rounded-lg font-semibold hover:bg-gray-600 transition">7</button>
+        <button id="btn" class="bg-gray-700 py-4 rounded-lg font-semibold hover:bg-gray-600 transition">8</button>
+        <button id="btn" class="bg-gray-700 py-4 rounded-lg font-semibold hover:bg-gray-600 transition">9</button>
+        <button id="btn-op" class="bg-orange-500 text-white py-4 rounded-lg font-bold hover:bg-orange-400 transition">X</button>
+
+        <!-- Linha 3 -->
+        <button id="btn" class="bg-gray-700 py-4 rounded-lg font-semibold hover:bg-gray-600 transition">4</button>
+        <button id="btn" class="bg-gray-700 py-4 rounded-lg font-semibold hover:bg-gray-600 transition">5</button>
+        <button id="btn" class="bg-gray-700 py-4 rounded-lg font-semibold hover:bg-gray-600 transition">6</button>
+        <button id="btn-op" class="bg-orange-500 text-white py-4 rounded-lg font-bold hover:bg-orange-400 transition">-</button>
+
+        <!-- Linha 4 -->
+        <button id="btn" class="bg-gray-700 py-4 rounded-lg font-semibold hover:bg-gray-600 transition">1</button>
+        <button id="btn" class="bg-gray-700 py-4 rounded-lg font-semibold hover:bg-gray-600 transition">2</button>
+        <button id="btn" class="bg-gray-700 py-4 rounded-lg font-semibold hover:bg-gray-600 transition">3</button>
+        <button id="btn-op" class="bg-orange-500 text-white py-4 rounded-lg font-bold hover:bg-orange-400 transition">+</button>
+
+        <!-- Linha 5 -->
+        <button id="btn" class="col-span-2 bg-gray-700 py-4 rounded-lg font-semibold hover:bg-gray-600 transition text-center">0</button>
+        <button id="btn" class="bg-gray-700 py-4 rounded-lg font-semibold text-xl hover:bg-gray-600 transition">.</button>
+        <button id="btn-igual" class="bg-orange-500 text-white py-4 rounded-lg font-bold text-2xl hover:bg-orange-400 transition">=</button>
+    </div>
+  </main>
+  <script type="module" src="./js/main.js"></script>
+</body>
+</html>

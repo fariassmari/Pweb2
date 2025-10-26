@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Conversor de temperatura</title>
+</head>
+<body class="bg-gray-900 text-gray-100 min-h-screen flex items-center justify-center">
+  <div class="container max-w-lg bg-gray-800 p-8 rounded-2xl shadow-lg">
+    <h1 class="text-3xl font-bold text-center text-blue-400 mb-8">Conversor de Temperatura 🌡️</h1>
+
+    <!-- Campo de entrada -->
+    <label class="block text-sm font-medium text-gray-300 mb-1">Digite a temperatura:</label>
+    <input type="number" id="valor-temperatura" placeholder="Ex: 25" class="w-full mb-4 px-4 py-2 rounded-lg bg-gray-700 text-gray-100 placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:outline-none">
+
+    <!-- Seleção do tipo de conversão -->
+    <label class="block text-sm font-medium text-gray-300 mb-1">Converter de:</label>
+    <select id="tipo-conversao" class="w-full mb-6 px-4 py-2 rounded-lg bg-gray-700 text-gray-100 focus:ring-2 focus:ring-blue-500 focus:outline-none">
+      <option value="1">Celsius → Fahrenheit</option>
+      <option value="2">Fahrenheit → Celsius</option>
+    </select>
+
+    <!-- Botão -->
+    <button id="btn-calcular" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-200">
+      Converter
+    </button>
+
+    <!-- Resultado -->
+    <div id="resultado-container" class="mt-8 border-t border-gray-600 pt-4 hidden">
+      <h3 class="text-xl font-semibold text-blue-300 mb-3">Resultado</h3>
+      <p id="saida-resultado" class="text-gray-200 text-lg font-medium"></p>
+    </div>
+  </div>
+
+  <script type="module" src="./js/main.js"></script>
+</body>
+</html>
