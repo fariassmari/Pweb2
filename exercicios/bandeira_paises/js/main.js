@@ -4,12 +4,12 @@ const main = document.querySelector('main');
 let htmlContent = '';
 
 for (const flag of flags) {
-  htmlContent += createFlag(flag);
+  htmlContent += criarFlag(flag);
 }
 
 main.innerHTML = htmlContent;
 
-function createFlag(flag) {
+function criarFlag(flag) {
   return `
     <div class="flag col-2 my-2 text-center">
       <img src="${flag.image}" alt="${flag.name}" class="mx-auto w-32 h-20 object-cover">
