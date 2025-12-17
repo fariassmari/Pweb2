@@ -1,0 +1,10 @@
+const displayUser = async() =>{
+    try {
+        const user = await loginUser('mariana@gmail.com', '1234');
+        const videos = await getUserVideos(user.email);
+        const videoDetails = await getVideosDetails(videos[0])
+        console.log({ videoDetails });
+    } catch(error){
+        console.log({ error });
+    }
+};
